@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jbs-eureka" />
+        <module name="jbs-common" />
+        <module name="jbs-provider" />
+        <module name="jbs-zuul" />
+        <module name="jbs-feign" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jbs-common" target="8" />
+      <module name="jbs-eureka" target="8" />
+      <module name="jbs-feign" target="8" />
+      <module name="jbs-provider" target="8" />
+      <module name="jbs-spring-cloud-parent" target="8" />
+      <module name="jbs-zuul" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

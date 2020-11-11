@@ -1,0 +1,16 @@
+server:
+  port: 3000
+  servlet:
+    context-path: /jbs/provider
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: jbs-provider
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

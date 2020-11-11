@@ -1,0 +1,20 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: zuul-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+
+zuul:
+  prefix: /jbs
+  ignored-services: '*'
+  routes:
+    jbs_route:      # 自定义路由规则的名称，在底层的数据结构中是Map的键
+      path: /feign/**
+      service-id: jbs-feign
