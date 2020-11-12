@@ -34,4 +34,10 @@ public class EmployeeHandler {
 		return "message from provider, with server port="+serverPort;
 	}
 
+
+	@RequestMapping("/hello")
+	public String hello(@RequestParam("param") String param){
+		return param;
+	}
+
 }
