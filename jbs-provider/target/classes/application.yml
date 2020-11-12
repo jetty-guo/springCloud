@@ -1,7 +1,6 @@
 server:
   port: 3000
-  servlet:
-    context-path: /jbs/provider
+
 eureka:
   client:
     serviceUrl:
@@ -14,3 +13,16 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+
+#hystrix超时时间配置 （如果不配置的话默认是1000毫秒超时）
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 7000
+
+  metrics:
+    enabled: true

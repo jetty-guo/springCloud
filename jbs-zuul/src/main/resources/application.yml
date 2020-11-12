@@ -18,3 +18,11 @@ zuul:
     jbs_route:      # 自定义路由规则的名称，在底层的数据结构中是Map的键
       path: /feign/**
       service-id: jbs-feign
+
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

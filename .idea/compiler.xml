@@ -14,12 +14,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jbs-common" target="1.5" />
-      <module name="jbs-eureka" target="1.5" />
-      <module name="jbs-feign" target="1.5" />
-      <module name="jbs-provider" target="1.5" />
+      <module name="jbs-common" target="1.8.0_202-release" />
+      <module name="jbs-eureka" target="1.8.0_202-release" />
+      <module name="jbs-feign" target="1.8.0_202-release" />
+      <module name="jbs-provider" target="1.8.0_202-release" />
       <module name="jbs-spring-cloud-parent" target="1.5" />
-      <module name="jbs-zuul" target="1.5" />
+      <module name="jbs-zuul" target="1.8.0_202-release" />
     </bytecodeTargetLevel>
   </component>
 </project>
